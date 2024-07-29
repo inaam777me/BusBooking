@@ -2,7 +2,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Reuse {
-    Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
+    
+    public Scanner ScannerSet(){
+        return scanner;
+    }
 
     public ArrayList<String> scannerGet(String[] InsertString){
         ArrayList<String> InsertedData = new ArrayList<>();
@@ -11,7 +15,7 @@ public class Reuse {
             InsertedData.add(scanner.nextLine());              
         }
         return InsertedData;
-
     }
+
     
 }

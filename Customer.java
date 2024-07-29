@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Customer {
     private String CustomerName;
@@ -9,7 +8,7 @@ public class Customer {
     private String Username;
     private String Password;
 
-    private static final Scanner scanner = new Scanner(System.in);
+    private static final Reuse reuse = new Reuse();
 
     public Customer(String CustomerName,String MobileNumber,String Email_ID,String City,Integer Age,String Username,String Password){
         this.CustomerName = CustomerName;
@@ -71,7 +70,7 @@ public class Customer {
     
     public void RegistationCustomer(){
         System.out.println("Please enter your Registation Details \nEnter your Full Name : ");
-        this.CustomerName = scanner.nextLine();
+        this.CustomerName = reuse.ScannerSet().nextLine();
 
 
     }

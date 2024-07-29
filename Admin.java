@@ -1,10 +1,12 @@
-import  java.util.Scanner;
+
+import java.util.ArrayList;
+
 
 public class Admin {
     private String Username;
     private String Password;
 
-    private final Scanner scanner = new Scanner(System.in);
+    private final Reuse reuse = new Reuse();
 
     public Admin(String Username, String Password){
         this.Username = Username;
@@ -30,11 +32,10 @@ public class Admin {
     // username password gethering
     public void UsernamePassword(){
         
-        System.out.println("Enter your Username : ");
-        this.Username = scanner.nextLine();
-        System.out.println("Enter your Password : ");
-        this.Password = scanner.nextLine();
-
+        String[] enterLogin = {"Enter your Username : ","Enter your Password : "};
+        ArrayList <String> EnterLogin = reuse.scannerGet(enterLogin);
+        EnterLogin.set(0, this.Username);
+        EnterLogin.set(1, this.Password);
         // admin username password checker
         if ("admin".equals(this.Username) & "admin".equals(this.Password))
             Bus.ShowMenu();
