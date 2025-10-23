@@ -1,18 +1,55 @@
-## Getting Started
+BusBooking – Java-Based Bus Reservation System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+BusBooking is a Java console application designed to streamline the bus reservation process. It allows users to search for available buses, book seats, and manage reservations efficiently.
 
-## Folder Structure
+Features
 
-The workspace contains two folders by default, where:
+User Registration & Login: Secure user authentication.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Bus Search: Find buses based on source, destination, and date.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Seat Selection: Choose available seats from the bus layout.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Booking Management: View, cancel, or modify reservations.
 
-## Dependency Management
+Admin Panel: Manage bus schedules and user bookings.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Technologies Used
+
+Java: Core programming language.
+
+Object-Oriented Programming (OOP): For modular and maintainable code.
+
+File Handling: To store user and booking data persistently.
+
+Getting Started
+
+Clone the Repository:
+
+git clone https://github.com/inaam777me/BusBooking.git
+
+
+Navigate to the Project Directory:
+
+cd BusBooking
+
+
+Compile and Run:
+
+javac *.java
+java Main
+
+
+Ensure you have the Java Development Kit (JDK) installed on your system.
+
+Usage
+
+Upon running the application, users can:
+
+Register for an account or log in.
+
+Search for buses by entering source, destination, and travel date.
+
+Select available seats and proceed with booking.
+
+Manage their reservations through the user interface.
